@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="manifest" href="manifest.json" />
-  <title>Jogo dos Nanicos</title>
+  <title>Jogo dos Nanicos!</title>
   <style>
     body {
       margin: 0;
@@ -16,6 +16,7 @@
       align-items: center;
       height: 100vh;
       flex-direction: column;
+      text-align: center;
     }
     .logo {
       max-width: 180px;
@@ -44,14 +45,19 @@
   </style>
 </head>
 <body>
+  <!-- Se quiser exibir a logo, descomente a linha abaixo -->
+  <!-- <img src="Logo preta vertical sem fundo.png" alt="Logo Alvim" class="logo" /> -->
+
   <button onclick="startBot()">Iniciar Jogo</button>
 
   <iframe id="botFrame" src="https://chat.alvimnutri.com.br/valesxxx"></iframe>
 
   <script>
     function startBot() {
-      document.querySelector('.logo').style.display = 'none';
+      // Esconde o botão
       document.querySelector('button').style.display = 'none';
+
+      // Mostra o iframe com o Typebot
       document.querySelector('#botFrame').style.display = 'block';
     }
   </script>
